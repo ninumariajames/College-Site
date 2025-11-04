@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - ST ALFRED COLLEGE OF APPLIED SCIENCES</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <script>
+    // Protect page: check login
+    if (localStorage.getItem("loggedIn") !== "true") {
+      alert("You must log in first!");
+      window.location.href = "index.html";
+    }
+  </script>
+  <header>
+    <h1>ST ALFRED COLLEGE OF APPLIED SCIENCES</h1>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="courses.html">Courses</a>
+      <a href="contact.html">Contact</a>
+      <a href="#" onclick="logout()">Logout</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Welcome to ST ALFRED COLLEGE OF APPLIED SCIENCES</h2>
+    <p>Empowering students through education, innovation, and integrity.</p>
+  </section>
+
+  <footer>
+    <p>© 2025 ST ALFRED COLLEGE OF APPLIED SCIENCES. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

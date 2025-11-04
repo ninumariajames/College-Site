@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Courses - ST ALFRED COLLEGE OF APPLIED SCIENCES</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <script>
+  // Check if the user is logged in
+  if (localStorage.getItem("loggedIn") !== "true") {
+    alert("You must log in to access this page!");
+    window.location.href = "login.html"; // redirect if not logged in
+  }
+</script>
+  <header>
+    <h1>ST ALFRED COLLEGE OF APPLIED SCIENCES</h1>
+    <nav>
+      <a href="index.html">Login</a>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="courses.html">Courses</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="content">
+    <h2>Our Courses</h2>
+    <ul>
+      <li>Bachelor of Computer Applications (BCA)</li>
+      <li>Bachelor of Commerce (B.Com)</li>
+      <li>Master of Computer Applications (MCA)</li>
+      <li>Bachelor of Science (B.Sc)</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>© 2025 ST ALFRED COLLEGE OF APPLIED SCIENCES. All rights reserved.</p>
+  </footer>
+</body>
+</html>
